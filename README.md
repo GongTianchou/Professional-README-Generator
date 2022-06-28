@@ -2,7 +2,7 @@
 
 # README-Generator
 [GitHub Repo](https://github.com/GongTianchou/Professional-README-Generator)
-[Video Showing Use](./Develop/src/sample%20video.webm)
+[Video Showing Use](https://drive.google.com/file/d/13ZUqkYHH2FIYtUo64SbdYFmsQC5ybxHU/view)
 # Description
 This application gives a user the possibility to have an automated README.md file generated through Node.js runtime enviroment, a series of questions is asked and based on your answers a README.md file will be generated and formatted.
 # Table of Contents 
