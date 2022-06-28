@@ -12,7 +12,7 @@ const questions = [{
     message:'what is the descrition of your project?'},
     {
     type:'input',
-    name:'Installation',
+    name:'installation',
     message:'what dependncies did you use for your project?'
     },
     {type:'input',
@@ -30,7 +30,7 @@ const questions = [{
     name:'contributors',
     message:'who is the cntributors for your project?'},
     {type:'input',
-    name:'Test',
+    name:'test',
     message:'did you test your project?'},
     {type:'input',
     name:'github',
@@ -57,7 +57,7 @@ function writeToFile(fileName, data) {
 function init(){
     inquirer.prompt(questions)
     .then(function(data) {
-        writeFile("README.md", generateMarkdown(data));
+        fs.writeFile("README.md", generateMarkdown(data));
         console.log(data)
       })
 }
