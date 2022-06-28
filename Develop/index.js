@@ -8,33 +8,42 @@ const questions = [
   {
     type: "input",
     name: "title",
-    message: "what is your project title name?",
+    message: "What is your project title name?",
   },
   {
     type: "input",
     name: "description",
-    message: "what is the descrition of your project?",
+    message: "What is the descrition of your project?",
   },
   {
     type: "input",
     name: "installation",
-    message: "what dependncies did you use for your project?",
+    message: "What dependncies did you use for your project?",
   },
-  { type: "input", name: "usage", message: "how to use your project app?" },
-  { type: "confirm", name: "license", message: "do you use any license?" },
+  { type: "input", name: "usage", message: "How to use your project app?" },
+  { type: "confirm", name: "license", message: "Do you use any license?" },
   {
-    type: "input",
+    type: "list",
     name: "licenses",
-    message: "which license do you use for your project?",
+    message: "Which license do you use for your project?",
+    choices: [
+      "Apache License 2.0",
+      "Boost Software",
+      "GNU LGPLv3",
+      "MIT License",
+      "Mozilla Public License 2.0",
+      "The Unlicense",
+    ],
   },
+
   {
     type: "input",
     name: "contributors",
-    message: "who is the cntributors for your project?",
+    message: "Who are the cntributors for your project?",
   },
-  { type: "input", name: "test", message: "did you test your project?" },
-  { type: "input", name: "github", message: "what is your github username?" },
-  { type: "input", name: "email", message: "what is your email address?" },
+  { type: "input", name: "test", message: "Did you test your project?" },
+  { type: "input", name: "github", message: "What is your github username?" },
+  { type: "input", name: "email", message: "What is your email address?" },
 ];
 
 // TODO: Create a function to write README file
